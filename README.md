@@ -129,7 +129,7 @@ If you use VAREdit in your research, please cite:
 @article{varedit2025,
   title={Visual Autoregressive Modeling for Instruction-Guided Image Editing},
   author={Mao, Qingyang and Cai, Qi and Li, Yehao and Pan, Yingwei and Cheng, Mingyue and Yao, Ting and Liu, Qi and Mei, Tao},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2508.15772},
   year={2025}
 }
 ```
