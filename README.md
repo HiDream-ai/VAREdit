@@ -40,6 +40,7 @@ cd VAREdit
 2. **Install dependencies**
 ```bash
 pip install -r requirements.txt
+pip install flash_attn
 ```
 
 3. **Download model checkpoints**
