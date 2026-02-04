@@ -13,6 +13,7 @@ Try our online demos: [🤗VAREdit-8B-1024](https://huggingface.co/spaces/HiDrea
 - **Strong Instruction Follow**: Follows instructions more accurately due to the autoregressive nature of the model.
 - **Efficient Inference**: Optimized for fast generation with less than 1 seconds for 8B model.
 - **Flexible Resolution**: Supports 512×512 and 1024×1024 image resolutions
+
 ![VAREdit Demo](assets/framework.png)
 
 ## 📊 Model Variants
