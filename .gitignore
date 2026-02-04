@@ -24,8 +24,6 @@ toscli
 *.hydra
 wandb
 *.jsonl
-*.jpg
-*.png
 *.json
 *.csv
 *.tar.gz
