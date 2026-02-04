@@ -1,5 +1,7 @@
 # VAREdit
 
+This is the official repository of ICLR 2026 paper: [Visual Autoregressive Modeling for Instruction-Guided Image Editing](https://arxiv.org/abs/2508.15772) 
+
 ![VAREdit Demo](assets/demo.jpg)
 
 [VAREdit](https://github.com/HiDream-ai/VAREdit) is an advanced image editing model built on the [Infinity](https://huggingface.co/FoundationVision/infinity) models, designed for high-quality instruction-based image editing.
@@ -11,7 +13,7 @@ Try our online demos: [🤗VAREdit-8B-1024](https://huggingface.co/spaces/HiDrea
 - **Strong Instruction Follow**: Follows instructions more accurately due to the autoregressive nature of the model.
 - **Efficient Inference**: Optimized for fast generation with less than 1 seconds for 8B model.
 - **Flexible Resolution**: Supports 512×512 and 1024×1024 image resolutions
-![VAREdit Demo](assets/framework.jpg)
+![VAREdit Demo](assets/framework.png)
 
 ## 📊 Model Variants
 
@@ -90,6 +92,8 @@ edited_image = generate_image(
 ```
 VAREdit/
 ├── infer.py              # Main inference script
+├── train.py              # Main training script
+├── trainer.py            # Main trainer script
 ├── infinity/             # Core model implementations
 │   ├── models/          # Model architectures
 │   ├── dataset/         # Data processing utilities
@@ -112,10 +116,10 @@ VAREdit/
 | ICEdit | 17.0B | 4.785 | 4.933 | 8.4s |
 | **VAREdit** (256px) | 2.2B | 5.565 | 6.684 | 0.5s |
 | **VAREdit** (512px) | 2.2B | 5.662 | 6.996 | 0.7s |
-| **VAREdit** (512px) | 8.4B | 7.792 | 8.105 | 1.2s |
+| **VAREdit** (512px) | 8.4B | 7.892 | 8.105 | 1.2s |
 | **VAREdit** (1024px) | 8.4B | 7.379 | 7.688 | 3.9s |
 
-**Note**: The released 8B models are trained longer and on more data, so the performances are better than that in the paper.
+**Note**: The released 8B models are trained longer and on more data.
 
 ## 📄 License
 
@@ -126,11 +130,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you use VAREdit in your research, please cite:
 
 ```bibtex
-@article{varedit2025,
+@inproceedings{varedit2026,
   title={Visual Autoregressive Modeling for Instruction-Guided Image Editing},
   author={Mao, Qingyang and Cai, Qi and Li, Yehao and Pan, Yingwei and Cheng, Mingyue and Yao, Ting and Liu, Qi and Mei, Tao},
-  journal={arXiv preprint arXiv:2508.15772},
-  year={2025}
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026}
 }
 ```
 
